@@ -18,23 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7p-P1-LE7">
-                                <rect key="frame" x="20" y="205" width="374" height="370"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f7p-P1-LE7">
+                                <rect key="frame" x="20" y="199" width="374" height="469"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSh-kJ-ogR">
-                                <rect key="frame" x="20" y="159" width="374" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSh-kJ-ogR">
+                                <rect key="frame" x="20" y="148" width="374" height="46"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" title="sopt.iOS.Lover" image="sopt.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdK-Fo-iPE">
-                                <rect key="frame" x="20" y="586" width="374" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YdK-Fo-iPE">
+                                <rect key="frame" x="20" y="678" width="374" height="34"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                <state key="normal">
+                                <state key="normal" title="B">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="selected" image="emptyHeart.png"/>
@@ -44,6 +41,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YdK-Fo-iPE" secondAttribute="bottom" constant="150" id="1Rd-bl-1WJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YdK-Fo-iPE" secondAttribute="trailing" constant="20" id="3lM-Rg-CaD"/>
+                            <constraint firstItem="cSh-kJ-ogR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5u7-yI-7uG"/>
+                            <constraint firstItem="cSh-kJ-ogR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="5wC-sP-yGr"/>
+                            <constraint firstItem="YdK-Fo-iPE" firstAttribute="top" secondItem="f7p-P1-LE7" secondAttribute="bottom" constant="10" id="8fL-i8-UPD"/>
+                            <constraint firstItem="f7p-P1-LE7" firstAttribute="top" secondItem="cSh-kJ-ogR" secondAttribute="bottom" constant="5" id="Cnk-IQ-zCu"/>
+                            <constraint firstItem="f7p-P1-LE7" firstAttribute="top" secondItem="cSh-kJ-ogR" secondAttribute="bottom" constant="5" id="ERK-fl-tPc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f7p-P1-LE7" secondAttribute="trailing" constant="20" id="Exc-oo-Pah"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cSh-kJ-ogR" secondAttribute="trailing" constant="20" id="I79-t1-0hd"/>
+                            <constraint firstItem="YdK-Fo-iPE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lZV-fZ-Qfm"/>
+                            <constraint firstItem="YdK-Fo-iPE" firstAttribute="top" secondItem="f7p-P1-LE7" secondAttribute="bottom" constant="10" id="wjJ-cP-5e3"/>
+                            <constraint firstItem="f7p-P1-LE7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zaH-Ls-FaO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Clu-Fj-q0w"/>
