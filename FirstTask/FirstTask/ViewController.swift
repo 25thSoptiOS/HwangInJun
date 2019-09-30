@@ -28,13 +28,19 @@ class ViewController: UIViewController {
 
     @IBAction func touchHeartButton(_ sender: Any) {
         
-        if(checking == false){
-        self.heartButton.isSelected = true
-            checking = true
+//        if(checking == false){
+//        self.heartButton.isSelected = true
+//            checking = true
+//        }
+//        else {
+//            self.heartButton.isSelected = false
+//            checking = false
+//        }
+        if self.heartButton.isSelected == false {
+            self.heartButton.isSelected = true
         }
         else {
             self.heartButton.isSelected = false
-            checking = false
         }
         
         
