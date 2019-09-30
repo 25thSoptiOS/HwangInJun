@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     
     let heartImage : UIImage = UIImage(named: "fullHeart.png")!
     let emptyHeartImage : UIImage = UIImage(named: "emptyHeart.png")!
+    let myImage : UIImage = UIImage(named: "Suisse")!
+/*  image source https://www.freepik.com/premium-photo/zermatt-switzerland-matterhorn-ski-resort_5204832.htm
+ */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,6 +29,7 @@ class ViewController: UIViewController {
         self.heartButton.setTitle("님이 좋아합니다.", for: UIControl.State.selected)
 //        self.heartButton.setAttributedTitle("님이 좋아합니다.", for: UIControl.State.selected)
         self.title = "Soptstargram"
+        self.anythingImageView.image = myImage
     }
 
     @IBAction func touchHeartButton(_ sender: Any) {
