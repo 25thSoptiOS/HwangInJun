@@ -56,15 +56,47 @@
 		5559A48E23519C8D00704FB2 /* SecondSemina */ = {
 			isa = PBXGroup;
 			children = (
-				5559A48F23519C8D00704FB2 /* AppDelegate.swift */,
-				5559A49123519C8D00704FB2 /* SceneDelegate.swift */,
-				5559A49323519C8D00704FB2 /* ViewController.swift */,
-				5559A49523519C8D00704FB2 /* Main.storyboard */,
-				5559A49823519C8D00704FB2 /* Assets.xcassets */,
-				5559A49A23519C8D00704FB2 /* LaunchScreen.storyboard */,
+				5559A4A523519EB100704FB2 /* Sources */,
+				5559A4A423519EAF00704FB2 /* Resources */,
+				5559A4A323519E9D00704FB2 /* Suppoting files */,
 				5559A49D23519C8D00704FB2 /* Info.plist */,
 			);
 			path = SecondSemina;
+			sourceTree = "<group>";
+		};
+		5559A4A323519E9D00704FB2 /* Suppoting files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Suppoting files";
+			sourceTree = "<group>";
+		};
+		5559A4A423519EAF00704FB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5559A49523519C8D00704FB2 /* Main.storyboard */,
+				5559A49823519C8D00704FB2 /* Assets.xcassets */,
+				5559A49A23519C8D00704FB2 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5559A4A523519EB100704FB2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5559A48F23519C8D00704FB2 /* AppDelegate.swift */,
+				5559A49123519C8D00704FB2 /* SceneDelegate.swift */,
+				5559A4A623519F2900704FB2 /* ViewControllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5559A4A623519F2900704FB2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5559A49323519C8D00704FB2 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
