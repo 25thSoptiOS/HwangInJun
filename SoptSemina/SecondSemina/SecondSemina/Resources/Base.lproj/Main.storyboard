@@ -15,9 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGj-50-INI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGj-50-INI">
                                 <rect key="frame" x="165" y="219" width="85" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="jjW-9U-NcG"/>
+                                    <constraint firstAttribute="width" constant="85" id="sEW-du-7YU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="녹 색">
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -26,9 +29,12 @@
                                     <segue destination="gG1-es-4VQ" kind="show" id="R3j-8p-3mO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y90-va-IMz">
-                                <rect key="frame" x="165" y="423" width="85" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y90-va-IMz">
+                                <rect key="frame" x="165" y="423" width="85" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="88w-bA-57r"/>
+                                    <constraint firstAttribute="height" constant="40" id="9a9-L4-kce"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="핑 크 색">
                                     <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,6 +45,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UGj-50-INI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="00d-D3-48p"/>
+                            <constraint firstItem="y90-va-IMz" firstAttribute="top" secondItem="UGj-50-INI" secondAttribute="bottom" constant="111" id="AGQ-Ob-kPf"/>
+                            <constraint firstItem="UGj-50-INI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="131" id="HoK-8q-Jg7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UGj-50-INI" secondAttribute="trailing" constant="164" id="gs6-IC-5TP"/>
+                            <constraint firstItem="y90-va-IMz" firstAttribute="top" secondItem="UGj-50-INI" secondAttribute="bottom" constant="111" id="kAI-AQ-qRy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y90-va-IMz" secondAttribute="bottom" constant="399" id="tbA-qi-T0Q"/>
+                            <constraint firstItem="y90-va-IMz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="y2e-Ae-tpu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y90-va-IMz" secondAttribute="trailing" constant="164" id="zac-0r-bKz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="8bv-aR-hGP"/>
