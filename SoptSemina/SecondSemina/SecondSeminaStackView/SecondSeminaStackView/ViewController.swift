@@ -24,11 +24,7 @@ class ViewController: UIViewController {
         
         
         //패턴 이미지 안되면 밑 소스로 
-        UIGraphicsBeginImageContext(self.view1.frame.size)
-            UIImage(named: "bgImage")?.draw(in: self.view1.bounds)
-            let bgImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-            UIGraphicsEndImageContext()
-            self.view1.backgroundColor = UIColor(patternImage: bgImage)
+
         
        // view1.backgroundColor = UIColor.init(patternImage: UIImage(named: "bgImage")!)
         
