@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var stackViewCenterY: NSLayoutConstraint!
+    @IBOutlet weak var loginView: UIView!
+    @IBOutlet weak var bgImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +37,7 @@ class ViewController: UIViewController {
         // view1.backgroundColor = UIColor.init(patternImage: UIImage(named: "bgImage")!)
         
         self.loginButton.layer.cornerRadius = 15
-        self.loginButton.layer.borderColor = UIColor.black.cgColor
+        self.loginButton.layer.borderColor = UIColor.white.cgColor
         self.loginButton.layer.borderWidth = 1.0
         
         
@@ -88,7 +90,7 @@ class ViewController: UIViewController {
             // duration은 간격
             UIView.animate(withDuration: duration, delay: 0.0, options: .init(rawValue: curve), animations: {
             
-          //  self.logoImgView.alpha = 0
+               // self.loginView.alpha = 0
             
             // +로 갈수록 y값이 내려가고 -로 갈수록 y값이 올라간다.
             self.stackViewCenterY.constant = -keyboardHeight/2 + 50
@@ -103,7 +105,7 @@ class ViewController: UIViewController {
             UIView.animate(withDuration: duration, delay: 0.0, options: .init(rawValue: curve), animations: {
             
             // 원래대로 돌아가도록
-          //  self.logoImgView.alpha = 1.0
+           // self.loginView.alpha = 1.0
             self.stackViewCenterY.constant = 0
             })
             

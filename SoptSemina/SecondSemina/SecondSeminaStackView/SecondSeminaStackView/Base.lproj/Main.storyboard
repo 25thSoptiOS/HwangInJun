@@ -21,9 +21,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="OHP-VV-LKa">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="625"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjm-DC-3su">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjm-DC-3su">
                                         <rect key="frame" x="85" y="486" width="245" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Sign up"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="l50-yf-c3j">
@@ -115,20 +114,30 @@
                                             <constraint firstAttribute="trailing" secondItem="uBU-QD-E7N" secondAttribute="trailing" id="xd0-qC-9vt"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ik6-Ta-VKi">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ik6-Ta-VKi">
                                         <rect key="frame" x="85" y="448" width="245" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="5rV-jG-2K1"/>
+                                            <constraint firstAttribute="width" constant="245" id="O9W-25-ROM"/>
+                                        </constraints>
                                         <state key="normal" title="Login"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="OHP-VV-LKa" firstAttribute="leading" secondItem="hyE-Mk-pw1" secondAttribute="leading" id="4wY-jh-ptt"/>
+                                    <constraint firstItem="pjm-DC-3su" firstAttribute="leading" secondItem="hyE-Mk-pw1" secondAttribute="leading" constant="85" id="5qH-JJ-fPQ"/>
                                     <constraint firstAttribute="trailing" secondItem="OHP-VV-LKa" secondAttribute="trailing" id="J9a-cK-Ofr"/>
+                                    <constraint firstItem="Ik6-Ta-VKi" firstAttribute="leading" secondItem="hyE-Mk-pw1" secondAttribute="leading" constant="85" id="KtB-hp-XOz"/>
+                                    <constraint firstAttribute="trailing" secondItem="pjm-DC-3su" secondAttribute="trailing" constant="84" id="OdK-Nh-qkG"/>
                                     <constraint firstItem="l50-yf-c3j" firstAttribute="centerX" secondItem="OHP-VV-LKa" secondAttribute="centerX" id="Sqp-bE-o15"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ik6-Ta-VKi" secondAttribute="trailing" constant="84" id="TkB-d5-FXP"/>
+                                    <constraint firstItem="Ik6-Ta-VKi" firstAttribute="top" secondItem="l50-yf-c3j" secondAttribute="bottom" constant="71.670000000000002" id="Wvj-GU-X5p"/>
                                     <constraint firstItem="OHP-VV-LKa" firstAttribute="top" secondItem="hyE-Mk-pw1" secondAttribute="top" id="Zo7-N6-z0I"/>
                                     <constraint firstAttribute="bottom" secondItem="OHP-VV-LKa" secondAttribute="bottom" id="acf-H4-yrB"/>
                                     <constraint firstItem="l50-yf-c3j" firstAttribute="width" secondItem="OHP-VV-LKa" secondAttribute="width" multiplier="0.669" id="leS-YV-3QW"/>
+                                    <constraint firstItem="pjm-DC-3su" firstAttribute="top" secondItem="Ik6-Ta-VKi" secondAttribute="bottom" constant="8" id="qxD-B1-B4a"/>
+                                    <constraint firstAttribute="bottom" secondItem="pjm-DC-3su" secondAttribute="bottom" constant="109" id="tJ4-5k-bTv"/>
                                     <constraint firstItem="l50-yf-c3j" firstAttribute="centerY" secondItem="OHP-VV-LKa" secondAttribute="centerY" id="yNh-va-prF"/>
                                 </constraints>
                             </view>
@@ -153,8 +162,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bgImageView" destination="OHP-VV-LKa" id="Kuz-JQ-yUl"/>
                         <outlet property="idTextField" destination="QGO-Ui-tGx" id="jXP-Go-dEe"/>
                         <outlet property="loginButton" destination="Ik6-Ta-VKi" id="nQS-hN-7No"/>
+                        <outlet property="loginView" destination="hyE-Mk-pw1" id="tFL-iL-Rfc"/>
                         <outlet property="pwTextField" destination="u4J-CP-V21" id="DH7-bP-pqP"/>
                         <outlet property="stackViewCenterY" destination="yNh-va-prF" id="jZO-Ka-GPS"/>
                         <outlet property="view1" destination="hyE-Mk-pw1" id="KKF-kG-Kxp"/>
