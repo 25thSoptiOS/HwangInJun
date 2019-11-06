@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+struct Banner{
+    
+    var bannerImg: UIImage?
+    
+    init(bannerName: String){
+        self.bannerImg = UIImage(named: bannerName)
+    }
+}
