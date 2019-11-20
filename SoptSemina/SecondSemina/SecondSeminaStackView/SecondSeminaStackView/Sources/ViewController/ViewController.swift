@@ -36,14 +36,20 @@ class ViewController: UIViewController {
         
         // view1.backgroundColor = UIColor.init(patternImage: UIImage(named: "bgImage")!)
         
-        self.loginButton.layer.cornerRadius = 15
-        self.loginButton.layer.borderColor = UIColor.white.cgColor
-        self.loginButton.layer.borderWidth = 1.0
+        
         
         
         
         
         registerKeyboardNotification()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        loginButton.layer.cornerRadius = loginButton.bounds.height / 2
+        loginButton.layer.borderColor = UIColor.white.cgColor
+        loginButton.layer.borderWidth = 1.0
     }
     
     deinit {
