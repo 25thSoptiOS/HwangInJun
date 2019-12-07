@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     // TODO: 현재 모든 버튼에 대해서 하나의 액션 함수로 처리함. 숫자 / 연산자 / AC 총 세 개의 분류로 나누어서 리팩토링.
     
+
     @IBOutlet var calculatorButtons: [UIButton]!
     @IBOutlet weak var testLabel: UILabel!
     

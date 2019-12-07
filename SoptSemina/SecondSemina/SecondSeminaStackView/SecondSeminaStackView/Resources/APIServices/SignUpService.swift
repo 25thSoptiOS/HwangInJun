@@ -81,7 +81,7 @@ class SignUpService {
     
     private init() {}
     
-    func signUp(_ id: String, _ pwd: String, _ name: String, _ phone: String, completion: @escaping (NetworkResult<Any>) -> Void) {
+    func signUp(_ id: String, _ pwd: String, _ name: String, _ phone: String, completion: @escaping (Swift.Result<Int, Error>) -> Void) {
         let header: HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
@@ -116,20 +116,21 @@ class SignUpService {
                                     
                                 case true:
                                     print("success")
-                                    completion(.success(result.data))
+                                    completion(.success(result.data ?? 0))
                                 case false:
-                                    completion(.requestErr(result.message))
+                                    completion(.failure(NetworkError.requestError(result.message)))
+//                                    completion(.requestErr(result.message))
                                 }
                             }
                             catch {
-                                completion(.pathErr)
+                                completion(.failure(NetworkError.pathError))
                                 print(error.localizedDescription)
                                 print(APIConstants.LoginURL)
                             }
                         case 400:
-                            completion(.pathErr)
+                            completion(.failure(NetworkError.pathError))
                         case 500:
-                            completion(.serverErr)
+                            completion(.failure(NetworkError.serverError))
                         default:
                             break
                         }// switch
@@ -140,7 +141,7 @@ class SignUpService {
             // 통신 실패 - 네트워크 연결
             case .failure(let err):
                 print(err.localizedDescription)
-                completion(.networkFail)
+                completion(.failure(NetworkError.networkError))
                 // .networkFail이라는 반환 값이 넘어감
                 break
             } // response.result switch
